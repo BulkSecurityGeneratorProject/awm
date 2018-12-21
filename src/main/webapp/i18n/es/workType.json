@@ -1,0 +1,11 @@
+{
+    "awmApp": {
+        "WorkType": {
+            "null": "",
+            "BOOK": "BOOK",
+            "THESIS": "THESIS",
+            "ARTICLE": "ARTICLE",
+            "OTHER": "OTHER"
+        }
+    }
+}
