@@ -18,7 +18,7 @@
         "prodDatabaseType": "mysql",
         "searchEngine": false,
         "messageBroker": false,
-        "serviceDiscoveryType": false,
+        "serviceDiscoveryType": "eureka",
         "buildTool": "maven",
         "enableSwaggerCodegen": false,
         "jwtSecretKey": "OGYxOTM0ZjVlMGYxYTc4NGZiYjY4ZWU5YWE3OTBjYzQ0NTlmODEzNTJmZTdhOTNhNDVjOThlZjlhYzRlZWI1MjdmNjc5N2VkZmU4ZDQ3MDZlNTljOTEyOWZjOTkwZmQwMDU5ZTJhYzk3MDk0MTljYWI2ZTI4ZTgyNGM4OWNiZTc=",
