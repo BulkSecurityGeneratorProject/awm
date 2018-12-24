@@ -2,26 +2,40 @@ package com.galeadev.awm.service.dto;
 
 import java.util.Date;
 
+import com.google.gson.annotations.SerializedName;
+
 public class UFValueDTO {
 	
-	private String Valor = null;
-	private Date Fecha = null;
+	@SerializedName("Valor")
+	private String ufStrValue = null;
 	
-	public double getValor() {
-		
-		if (this.Valor!= null)
-		this.Valor = Valor.replace(".", "").replace(",", ".");
-		return Double.parseDouble(Valor);
-	}
+	@SerializedName("Fecha")
+	private Date ufDate = null;
 	
-	public void setValor(String valor) {
-		Valor = valor;
+	public UFValueDTO() {
+		super();
 	}
-	public Date getFecha() {
-		return Fecha;
+
+	public UFValueDTO(String ufStrValue, Date ufDate) {
+		super();
+		this.ufStrValue = ufStrValue;
+		this.ufDate = ufDate;
 	}
-	public void setFecha(Date fecha) {
-		Fecha = fecha;
+
+	public String getUfStrValue() {
+		return ufStrValue;
 	}
-	
+
+	public void setUfStrValue(String ufStrValue) {
+		this.ufStrValue = ufStrValue;
+	}
+
+	public Date getUfDate() {
+		return ufDate;
+	}
+
+	public void setUfDate(Date ufDate) {
+		this.ufDate = ufDate;
+	}
+
 }

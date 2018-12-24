@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="mariaDB-167ce28c7a9-7900d720bdf8b567" provider="mysql" driver="mariaDB" name="MariaDB - awmdb" save-password="true" show-system-objects="true" show-util-objects="true" read-only="false">
+		<connection host="localhost" port="3306" server="" database="awmdb" url="jdbc:mysql://localhost:3306/awmdb" user="awmuser" password="AAEFNVNGHU9l8w==" home="/usr" type="dev"/>
+	</data-source>
+	<filters/>
+</data-sources>

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { JhiEventManager } from 'ng-jhipster';
 
-import { LoginModalService, AccountService, Account } from 'app/core';
+import { LoginModalService, AccountService, Account, UFService, UFValue } from 'app/core';
 
 @Component({
     selector: 'jhi-home',
@@ -11,17 +11,22 @@ import { LoginModalService, AccountService, Account } from 'app/core';
 })
 export class HomeComponent implements OnInit {
     account: Account;
+    ufValue: UFValue;
     modalRef: NgbModalRef;
 
     constructor(
         private accountService: AccountService,
         private loginModalService: LoginModalService,
-        private eventManager: JhiEventManager
+        private eventManager: JhiEventManager,
+        private ufService: UFService
     ) {}
 
     ngOnInit() {
         this.accountService.identity().then(account => {
             this.account = account;
+        });
+        this.ufService.identity().then(ufValue => {
+            this.ufValue = ufValue;
         });
         this.registerAuthenticationSuccess();
     }

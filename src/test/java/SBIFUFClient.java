@@ -1,7 +1,3 @@
-package com.galeadev.awm.web.restclients;
-
-import java.util.ArrayList;
-import java.util.List;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
@@ -34,6 +30,8 @@ public class SBIFUFClient {
 		Gson gson = new GsonBuilder().setDateFormat(dateFormat).create();
 
 		UFValueDTO ufVal = gson.fromJson(UFs, UFValueDTO.class);
+		
+		System.out.println(ufVal.getUfStrValue());
 		
 	}
 

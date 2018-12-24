@@ -30,6 +30,15 @@
         "otherModules": [],
         "enableTranslation": true,
         "nativeLanguage": "en",
-        "languages": ["en", "es"]
+        "languages": ["en", "es"],
+        "gcpProjectId": "apsideproj",
+        "gcpCloudSqlInstanceName": "apsideproj:us-central1:apsidedb",
+        "gcpCloudSqlUserName": "awmuser",
+        "gcpCloudSqlDatabaseName": "awmdb",
+        "gaeServiceName": "awm",
+        "gaeLocation": "us-central",
+        "gaeInstanceClass": "B1",
+        "gaeScalingType": "manual",
+        "gaeInstances": "1"
     }
 }
